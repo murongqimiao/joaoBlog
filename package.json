@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "vuepress dev joaoBlog",
-    "build": "vuepress build joaoBlog"
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
   },
   "author": "",
   "license": "ISC"
