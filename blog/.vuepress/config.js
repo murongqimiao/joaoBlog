@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'João's 博客',
+    title: "João's 博客",
     description: 'Just playing around',
     themeConfig: {
       nav: [
