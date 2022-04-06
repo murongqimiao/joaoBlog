@@ -25,7 +25,12 @@ module.exports = {
           title: '交互帧动画游戏',
           path: '/joaoBlog/game',
           children: [
-            '/joaoBlog/game/', '/joaoBlog/game/0'
+            '/joaoBlog/game/',
+            '/joaoBlog/game/0',
+            '/joaoBlog/game/1',
+            '/joaoBlog/game/2',
+            '/joaoBlog/game/3',
+            '/joaoBlog/game/4',
           ],
           initialOpenGroupIndex: -1 // 可选的, 默认值是 0
         }
