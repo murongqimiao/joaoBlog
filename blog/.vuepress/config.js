@@ -22,7 +22,7 @@ module.exports = {
           ]
         },
         {
-          title: '交互帧动画游戏',
+          title: '可交互帧动画游戏',
           path: '/joaoBlog/game',
           children: [
             '/joaoBlog/game/',
