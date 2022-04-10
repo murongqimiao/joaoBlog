@@ -3,24 +3,121 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>创建一个游戏对象 | João's 博客</title>
+    <title>创建一个游戏对象 | João&#39;s 博客</title>
     <meta name="generator" content="VuePress 1.9.7">
     
     <meta name="description" content="Just playing around">
     
-    <link rel="preload" href="/joaoBlog/assets/css/0.styles.03712d01.css" as="style"><link rel="preload" href="/joaoBlog/assets/js/app.f3536177.js" as="script"><link rel="preload" href="/joaoBlog/assets/js/2.427cf630.js" as="script"><link rel="preload" href="/joaoBlog/assets/js/13.62bca4eb.js" as="script"><link rel="prefetch" href="/joaoBlog/assets/js/10.fe6845c8.js"><link rel="prefetch" href="/joaoBlog/assets/js/11.77f23b34.js"><link rel="prefetch" href="/joaoBlog/assets/js/12.c8dc3911.js"><link rel="prefetch" href="/joaoBlog/assets/js/14.64f3beb1.js"><link rel="prefetch" href="/joaoBlog/assets/js/15.48a2ded4.js"><link rel="prefetch" href="/joaoBlog/assets/js/16.95324d3e.js"><link rel="prefetch" href="/joaoBlog/assets/js/3.1f871fe5.js"><link rel="prefetch" href="/joaoBlog/assets/js/4.d8a1e815.js"><link rel="prefetch" href="/joaoBlog/assets/js/5.0e58edd3.js"><link rel="prefetch" href="/joaoBlog/assets/js/6.1c66c98c.js"><link rel="prefetch" href="/joaoBlog/assets/js/7.5cc18c3b.js"><link rel="prefetch" href="/joaoBlog/assets/js/8.55e45146.js"><link rel="prefetch" href="/joaoBlog/assets/js/9.fa532052.js">
-    <link rel="stylesheet" href="/joaoBlog/assets/css/0.styles.03712d01.css">
+    <link rel="preload" href="/joaoBlog/assets/css/0.styles.a8c216e1.css" as="style"><link rel="preload" href="/joaoBlog/assets/js/app.88566545.js" as="script"><link rel="preload" href="/joaoBlog/assets/js/2.251005b6.js" as="script"><link rel="preload" href="/joaoBlog/assets/js/7.ce829ba3.js" as="script"><link rel="prefetch" href="/joaoBlog/assets/js/10.e8d1ccd8.js"><link rel="prefetch" href="/joaoBlog/assets/js/11.ebd2c6cd.js"><link rel="prefetch" href="/joaoBlog/assets/js/12.93f626b6.js"><link rel="prefetch" href="/joaoBlog/assets/js/13.1fbcb913.js"><link rel="prefetch" href="/joaoBlog/assets/js/14.17657132.js"><link rel="prefetch" href="/joaoBlog/assets/js/15.2d7032ce.js"><link rel="prefetch" href="/joaoBlog/assets/js/16.f0a1d6b5.js"><link rel="prefetch" href="/joaoBlog/assets/js/3.b8aa1093.js"><link rel="prefetch" href="/joaoBlog/assets/js/4.3381d699.js"><link rel="prefetch" href="/joaoBlog/assets/js/5.a20dceb0.js"><link rel="prefetch" href="/joaoBlog/assets/js/6.87347a17.js"><link rel="prefetch" href="/joaoBlog/assets/js/8.fe0aa8c8.js"><link rel="prefetch" href="/joaoBlog/assets/js/9.4ddcb1c2.js">
+    <link rel="stylesheet" href="/joaoBlog/assets/css/0.styles.a8c216e1.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http:/www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">João's 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/joaoBlog/assets/" class="nav-link router-link-active">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">João's 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/joaoBlog/" class="nav-link router-link-active">
   Home
 </a></div><div class="nav-item"><a href="/" class="nav-link">
   Guide
-</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/joaoBlog/assets/" class="nav-link router-link-active">
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/joaoBlog/" class="nav-link router-link-active">
   Home
 </a></div><div class="nav-item"><a href="/" class="nav-link">
   Guide
-</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/joaoBlog/assets/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/joaoBlog/assets/dag" class="sidebar-heading clickable"><span>DAG-Diagram有向无环图</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/joaoBlog/assets/game" class="sidebar-heading clickable router-link-active"><span>交互帧动画游戏</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="创建一个游戏对象"><a href="#创建一个游戏对象" class="header-anchor">#</a> 创建一个游戏对象</h1></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/joaoBlog/assets/js/app.f3536177.js" defer></script><script src="/joaoBlog/assets/js/2.427cf630.js" defer></script><script src="/joaoBlog/assets/js/13.62bca4eb.js" defer></script>
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/joaoBlog/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/joaoBlog/dag" class="sidebar-heading clickable"><span>DAG-Diagram有向无环图</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/joaoBlog/game" class="sidebar-heading clickable router-link-active open"><span>可交互帧动画游戏</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/joaoBlog/game/" aria-current="page" class="sidebar-link">开篇</a></li><li><a href="/joaoBlog/game/0.html" class="sidebar-link">初始环境构建</a></li><li><a href="/joaoBlog/game/1.html" aria-current="page" class="active sidebar-link">创建一个游戏对象</a></li><li><a href="/joaoBlog/game/2.html" class="sidebar-link">创建一个动画对象</a></li><li><a href="/joaoBlog/game/3.html" class="sidebar-link">添加动画对象的控制逻辑</a></li><li><a href="/joaoBlog/game/4.html" class="sidebar-link">地图加载</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="创建一个游戏对象"><a href="#创建一个游戏对象" class="header-anchor">#</a> 创建一个游戏对象</h1> <p>代码参考 joaoStudio master分支 lesson1 文件夹</p> <div class="language- extra-class"><pre class="language-text"><code>npm start 启动后
+可以在页面中看到canvas里运行的helloworld动画
+同时在左上角标出了当前的帧率
+</code></pre></div><p><img src="/joaoBlog/assets/img/1-0.0c49c836.gif" alt="demo"></p> <p>所谓可以交互的帧动画,其本质还是帧动画,就是每秒在画布上更新N次图像。</p> <p>首先要写一个游戏类, class game 来初始化一个全局存在的游戏对象,这个游戏对象每秒会更新自己N次,同时每次更新后都会把最新的数据状态渲染成图像显示在canvas上。</p> <div class="language- extra-class"><pre class="language-text"><code>class Game {
+    roleList = []
+    environmentList = [] // 环境资源
+    allRenderList = [] 
+    keyCollect = [] // 当前活跃的按键
+    keyCollectBuffer = [] // 活跃过的按键在缓冲区待一阵
+    debug = 1
+    gameFPS = 60
+    currentFrameIndexPerSeconde = 0
+    gameStatus = {
+        loading: false
+    }
+    helloWorldPosition = {
+        x: 0,
+        directionRight: true,
+        y: 0,
+        directionBottom: true
+    }
+
+    /**
+     * 每一帧执行的行为
+     */
+    run() {
+        var c = document.getElementById('canvas');
+        var ctx = c.getContext(&quot;2d&quot;);
+        // 清理掉原来内容, 重新绘制最新的状态
+        ctx.clearRect(0, 0, c.width, c.height)
+        const that = this;
+
+        // 打印FPS
+        drawFPS(ctx, this.gameFPS)
+
+        // draw helloworld
+        drawHelloWorld(ctx, this.helloWorldPosition)
+
+        // 执行下一帧
+        this.currentFrameIndexPerSeconde++
+        window.requestAnimationFrame(() =&gt; {
+            this.run()
+        })
+    }
+
+    getFPS() {
+        this.gameFPS = this.currentFrameIndexPerSeconde
+        this.currentFrameIndexPerSeconde = 0
+        return this
+    }
+
+    start() {
+        console.log(&quot;running&quot;)
+        console.log(+ new Date())
+        window.requestAnimationFrame(() =&gt; {
+            this.run()
+        })
+    }
+
+}
+</code></pre></div><p>然后添加FPS打印和绘制helloworld的方法</p> <div class="language- extra-class"><pre class="language-text"><code>const drawFPS = function (ctx, gameFPS) {
+    ctx.font = '20px Arial'
+    ctx.fillStyle = '#fff'
+    let FPSText = 'FPS:  ' + gameFPS
+    ctx.direction = 'ltr'
+    ctx.fillText(FPSText, 10, 20)
+}
+
+const drawHelloWorld = function (ctx, position) {
+    const { x, y, directionRight, directionBottom } = position
+    ctx.font = '24px Arial'
+    ctx.fillStyle = '#3072f6'
+    ctx.direction = 'ltr'
+    ctx.fillText('hello world', position.x, position.y)
+    if (directionRight) { position.x += 3 } else { position.x -= 3 }
+    if (directionBottom) { position.y += 1 } else { position.y -= 1 }
+    if (x &gt; 1000) {
+        position.directionRight = false
+    } else if (x &lt; 0) {
+        position.directionRight = true
+    }
+    if (y &gt; 600) {
+        position.directionBottom = false
+    } else if (y &lt; 20) {
+        position.directionBottom = true
+    }
+}
+</code></pre></div><p>然后实例化一个game类, 运行start方法即可</p> <div class="language- extra-class"><pre class="language-text"><code>let _game = new Game()
+_game.start()
+</code></pre></div><h1 id="动态计算帧率"><a href="#动态计算帧率" class="header-anchor">#</a> 动态计算帧率</h1> <p>因为涉及到性能及高刷屏的问题, requestAnimationFrame每秒稳定运行60帧比较难,所以后续计算要动态考虑当前帧率来计算运动速度等属性。</p> <p>同时用setTimeout取代requestAnimationFrame是不太合适的, 很多前端知道react16里闲时计算写了两套, 除开requestAnimationFrame还有一套setTimeout, 但是setTimeout很难达到帧率需求。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/joaoBlog/game/0.html" class="prev">
+        初始环境构建
+      </a></span> <span class="next"><a href="/joaoBlog/game/2.html">
+        创建一个动画对象
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/joaoBlog/assets/js/app.88566545.js" defer></script><script src="/joaoBlog/assets/js/2.251005b6.js" defer></script><script src="/joaoBlog/assets/js/7.ce829ba3.js" defer></script>
   </body>
 </html>
