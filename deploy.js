@@ -1,4 +1,4 @@
-const { exec } = require("child_process")
+const { exec, execSync } = require("child_process")
 const fs = require("fs")
 const path =  require('path')
 
@@ -58,7 +58,7 @@ readDir(buildDirPath, buildDirList)
 moveDir(buildDirPath, buildDirList)
 
 // 删除上次构建过的docs
-exec(`rm -rf docs`)
+execSync(`rm -rf docs`)
 
 // 移动dist文件夹的内容到docs下
 fs.renameSync(path.join(buildDirPath), path.join(aimDirName))
