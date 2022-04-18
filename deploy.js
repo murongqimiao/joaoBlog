@@ -20,14 +20,19 @@ const changeHtmlText = (path) => {
 const changeJsText = (path) => {
     let textContent = fs.readFileSync(path, 'utf-8')
     textContent = textContent.replace(/assets\/img/g, '/' + space + '/assets/img')
+    textContent = textContent.replace(/assets\/js/g, '/' + space + '/assets/js')
     fs.writeFileSync(path, textContent)
 }
 
 const readDir = (dirPath, list) => {
     list.forEach(v => {
         try {
-            const deepDirList = fs.readdirSync(path.join(buildDirPath, v))
-            readDir(path.join(dirPath, v), deepDirList)
+            console.log("dirPath", dirPath)
+            const depDirPath = path.join(dirPath, v)
+            console.log("depDirPath", depDirPath)
+            const deepDirList = fs.readdirSync(depDirPath)
+            console.log("deepDirList", deepDirList)
+            readDir(depDirPath, deepDirList)
         } catch(err) {
             console.log(v, 'is not dir')
             if (v.includes('.html')) {
@@ -50,6 +55,7 @@ const moveDir = (dirPath, list) => {
         }
     })
 }
+
 
 // 替换文字内容
 readDir(buildDirPath, buildDirList)
