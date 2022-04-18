@@ -13,7 +13,8 @@ const buildDirList = fs.readdirSync(buildDirPath)
 
 const changeHtmlText = (path) => {
     let textContent = fs.readFileSync(path, 'utf-8')
-    textContent = textContent.replace(/\/assets/g, '/' + space + '/assets')
+    textContent = textContent.replace(/\/assets\/css/g, '/' + space + '/assets/css')
+    textContent = textContent.replace(/\/assets\/js/g, './' + space + '/assets/css')
     fs.writeFileSync(path, textContent)
 }
 
