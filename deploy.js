@@ -26,6 +26,13 @@ const changeJsText = (path) => {
     fs.writeFileSync(path, textContent)
 }
 
+const changeCssText = (path) => {
+    let textContent = fs.readFileSync(path, 'utf-8')
+    textContent = textContent.replace("/assets/img/", "/" + space + '/assets/img/')
+    fs.writeFileSync(path, textContent)
+}
+
+
 const readDir = (dirPath, list) => {
     list.forEach(v => {
         try {
@@ -41,6 +48,8 @@ const readDir = (dirPath, list) => {
                 changeHtmlText(path.join(dirPath, v))
             } else if (v.includes('.js')) {
                 changeJsText(path.join(dirPath, v))
+            } else if (v.includes('.css')) {
+                changeCssText(path.join(dirPath, v))
             }
         }
     })
