@@ -5,7 +5,7 @@ const path =  require('path')
 const space = 'joaoBlog'
 const buildDir = './blog/.vuepress/dist/'
 const aimDirName = 'docs'
-const host = 'https://murongqimiao.github.io'
+const host = 'https://murongqimiao.github.io/'
 
 // 修改dist打包后的文件格式
 const buildDirPath = path.join(buildDir)
