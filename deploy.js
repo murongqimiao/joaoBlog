@@ -22,7 +22,7 @@ const changeHtmlText = (path) => {
 const changeJsText = (path) => {
     let textContent = fs.readFileSync(path, 'utf-8')
     textContent = textContent.replace(/assets\/img/g, '/' + space + '/assets/img')
-    textContent = textContent.replace(/assets\/js/g, '/' + space + '/assets/js')
+    textContent = textContent.replace(/assets\/js/g, space + '/assets/js')
     fs.writeFileSync(path, textContent)
 }
 
