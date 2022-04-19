@@ -14,7 +14,7 @@ const buildDirList = fs.readdirSync(buildDirPath)
 const changeHtmlText = (path) => {
     let textContent = fs.readFileSync(path, 'utf-8')
     textContent = textContent.replace(/\"\/joaoBlog/g, '"') // 这里的joaoBlog要替换成需要删除的层级目录
-    textContent = textContent.replace(/\/assets/g, '/' + space + '/assets')
+    textContent = textContent.replace(/\/assets/g, './' + space + '/assets')
     fs.writeFileSync(path, textContent)
 }
 
