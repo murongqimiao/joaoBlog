@@ -5,6 +5,7 @@ const path =  require('path')
 const space = 'joaoBlog'
 const buildDir = './blog/.vuepress/dist/'
 const aimDirName = 'docs'
+const host = 'https://murongqimiao.github.io'
 
 // 修改dist打包后的文件格式
 const buildDirPath = path.join(buildDir)
@@ -14,7 +15,7 @@ const buildDirList = fs.readdirSync(buildDirPath)
 const changeHtmlText = (path) => {
     let textContent = fs.readFileSync(path, 'utf-8')
     textContent = textContent.replace(/\"\/joaoBlog/g, '"') // 这里的joaoBlog要替换成需要删除的层级目录
-    textContent = textContent.replace(/\/assets/g, './' + space + '/assets')
+    textContent = textContent.replace(/\/assets/g, host + space + '/assets')
     fs.writeFileSync(path, textContent)
 }
 
