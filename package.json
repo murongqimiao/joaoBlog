@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "vuepress dev blog",
-    "build": "vuepress build blog && npm run deploy",
+    "buildForGithub": "vuepress build blog && npm run deploy",
+    "build": "vuepress build blog",
     "deploy": "node ./deploy.js"
   },
   "author": "",
